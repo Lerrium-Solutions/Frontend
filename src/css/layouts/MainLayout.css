@@ -58,6 +58,7 @@ footer {
         }
     }
 }
+
 @media (min-width: 1200px) {
     .main-wrapper {
         grid-template-columns: auto auto;
