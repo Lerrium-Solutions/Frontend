@@ -53,3 +53,7 @@ main {
   color: var(--text-color-alt);
   text-decoration: none;
 }
+
+.strikethrough {
+  text-decoration: line-through 2px var(--text-color);
+}
