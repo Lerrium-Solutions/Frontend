@@ -25,9 +25,10 @@ header {
     }
 }
 
-@media (width >= 1280px) {
+@media (width >= 1200px) {
     header {
         padding: 4em;
+        margin-bottom: -1em;
     }
 
 }
