@@ -2,16 +2,16 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 
 import './App.css';
 import MainLayout from './assets/layouts/MainLayout';
+import Hero from './assets/pages/Hero';
+import About from './assets/pages/About';
 import Projects from './assets/pages/Projects';
 import Contact from './assets/pages/Contact';
-import About from './assets/pages/About';
 import PrivacyPolicy from './assets/pages/PrivacyPolicy';
 import CenterLayout from './assets/layouts/CenterLayout';
 import Login from './assets/auth/Login';
 import Register from './assets/auth/Register';
 import NotFound from './assets/pages/NotFound';
 import GDPRBanner from './assets/components/GDPR';
-import Hero from './assets/pages/Hero';
 
 function App() {
   return (
@@ -31,9 +31,9 @@ function App() {
         {/* MainLayout for primary pages */}
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Hero />} />
+          <Route path="about" element={<About />} />
           <Route path="projects" element={<Projects />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="about" element={<About />} />
           <Route path="privacy" element={<PrivacyPolicy />} /> {/* Added for GDPR */}
         </Route>
 

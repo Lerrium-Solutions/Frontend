@@ -4,6 +4,8 @@ nav {
     a, a:hover, a:focus, a:active, a:visited {
         border-radius: .25em;
         outline: none;
+        color: var(--text-color-alt);
+        border-bottom: var(--text-color-alt) 3px solid;
     }
 }
 

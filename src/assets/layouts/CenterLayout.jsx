@@ -4,7 +4,7 @@ import '/src/css/layouts/CenterLayout.css'
 const CenterLayout = () => {
   return (
     <div className='center-wrapper'>
-      <main className='content-card'>
+      <main className='card'>
         <Outlet />
       </main>
     </div>

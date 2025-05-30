@@ -3,7 +3,9 @@ import '/src/css/auth/Register.css'
 
 const Register = () => {
   return (
-    <div>Register</div>
+    <div className='register-wrapper'>
+      <h1 className='h3'>Register Account</h1>
+    </div>
   )
 }
 

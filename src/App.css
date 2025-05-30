@@ -11,6 +11,9 @@ html, body {
   color: var(--text-color);
   background-color: var(--background-color);
 }
+body {
+  font-family: 'JetBrains Mono', monospace;
+}
 
 a { 
   padding: .4em 1em;

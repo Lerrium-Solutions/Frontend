@@ -3,7 +3,9 @@ import '/src/css/auth/Login.css'
 
 const Login = () => {
   return (
-    <div>Login</div>
+    <div className='login-wrapper'>
+      <h1 className='h3'>Login</h1>
+    </div>
   )
 }
 
