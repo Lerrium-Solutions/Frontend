@@ -13,9 +13,20 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.5em;
+    gap: .5em;
 }
 
 .nav-links NavLink {
     margin: 0;
+}
+
+@media (width >= 768px) {
+    .nav-links {
+        gap: 1em;
+    }
+}
+@media (width >= 1280px) {
+    .nav-links {
+        gap: 1.5em;
+    }
 }
