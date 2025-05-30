@@ -22,7 +22,7 @@ const Footer = () => {
         onClick={toggleTheme}
         className="theme-toggle"
       >
-        <i className={theme === 'light' ? 'bi bi-brightness-high' : 'bi bi-moon'}></i>
+        <i className={theme === 'light' ? 'bi bi-moon' : 'bi bi-brightness-high'}></i>
       </button>
       <p>© {currentYear} Lerrium Solutions. All rights reserved.</p>
     </footer>
