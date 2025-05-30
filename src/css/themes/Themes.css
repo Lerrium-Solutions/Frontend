@@ -70,14 +70,19 @@ main {
     color: var(--text-color);
 }
 
+main .breadcrumb {
+    color: var(--text-color-alt);
+}
+
+main .main-content {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+
 footer {
     background-color: var(--primary-color);
     color: var(--text-color-muted);
-}
-
-.main-content {
-    background-color: var(--background-color);
-    color: var(--text-color);
 }
 
 .gdpr-card {
