@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header>
       <NavLink to="/">
-        <h1>LERRIUM SOLUTIONS</h1>
+        <h1 className='title'>LERRIUM SOLUTIONS</h1>
       </NavLink>  
     </header>
   )

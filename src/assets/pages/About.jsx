@@ -3,7 +3,7 @@ import '/src/css/pages/About.css'
 
 const About = () => {
   return (
-    <h1>About</h1>
+    <h1 className='h3'>About</h1>
   )
 }
 

@@ -3,7 +3,7 @@ import React from 'react'
 const PrivacyPolicy = () => {
     return (
         <div>
-            <h1>Privacy Policy</h1>
+            <h1 className='h3'>Privacy Policy</h1>
             <p>We have no interest of your data.</p>
             <p>A cookie is created that communicates with the site, and only focus on essential usage.</p>
             <p>Such as if you are on dark/light mode, which parts of the page you have visited.</p>

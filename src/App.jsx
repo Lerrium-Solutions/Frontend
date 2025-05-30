@@ -11,6 +11,7 @@ import Login from './assets/auth/Login';
 import Register from './assets/auth/Register';
 import NotFound from './assets/pages/NotFound';
 import GDPRBanner from './assets/components/GDPR';
+import Hero from './assets/pages/Hero';
 
 function App() {
   return (
@@ -29,23 +30,21 @@ function App() {
       <Routes>
         {/* MainLayout for primary pages */}
         <Route path="/" element={<MainLayout />}>
-          <Route index element={<h1>Home</h1>} />
+          <Route index element={<Hero />} />
           <Route path="projects" element={<Projects />} />
           <Route path="contact" element={<Contact />} />
           <Route path="about" element={<About />} />
           <Route path="privacy" element={<PrivacyPolicy />} /> {/* Added for GDPR */}
-          <Route path="*" element={<NotFound />} /> {/* Improved 404 */}
         </Route>
 
         {/* CenterLayout for auth pages */}
         <Route path="/auth" element={<CenterLayout />}>
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
-          <Route path="*" element={<NotFound />} /> {/* Improved 404 */}
         </Route>
 
         {/* 404 Route */}
-        <Route path="*" element={<NotFound />} /> {/* Improved 404 */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );

@@ -17,15 +17,19 @@
   --font-weight-900: 900;
 
   /* Font Sizes */
-  --font-size-xxs: 0.625rem;   /* 10px */
-  --font-size-xs:  0.75rem;    /* 12px */
-  --font-size-sm:  0.875rem;   /* 14px */
-  --font-size-base: 1rem;      /* 16px */
-  --font-size-md:  1.125rem;   /* 18px */
-  --font-size-lg:  1.25rem;    /* 20px */
-  --font-size-xl:  1.5rem;     /* 24px */
-  --font-size-2xl: 2rem;       /* 32px */
-  --font-size-3xl: 3rem;       /* 48px */
+  --font-size-tiny: 0.625em;          /* 10px */
+  --font-size-extra-small: 0.75em;    /* 12px */
+  --font-size-small: 0.875em;         /* 14px */
+  --font-size-normal: 1em;            /* 16px */
+  --font-size-medium: 1.125em;        /* 18px */
+  --font-size-large: 1.25em;          /* 20px */
+  --font-size-extra-large: 1.5em;     /* 24px */
+  --font-size-2x-large: 2em;          /* 32px */
+  --font-size-3x-large: 3em;          /* 48px */
+  --font-size-4x-large: 3.5em;        /* 56px */
+  --font-size-5x-large: 4em;          /* 64px */
+  --font-size-6x-large: 4.5em;        /* 72px */
+  --font-size-7x-large: 5em;          /* 80px */
 
   /* Icon Fonts */
   --fa-free-font-family: 'Font Awesome 6 Free';
@@ -35,7 +39,7 @@
 html, body {
   font-family: var(--primary-font-family);
   font-weight: var(--font-weight-400);
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-normal);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -44,28 +48,33 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, .h1 {
-  font-size: var(--font-size-3xl);
+  font-size: var(--font-size-4x-large);
 }
 h2, .h2 {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-3x-large);
 }
 h3, .h3 {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-2x-large);
 }
 h4, .h4 {
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-extra-large);
 }
 h5, .h5 {
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-large);
 }
 h6, .h6 {
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-tiny);      /* 10px */
+}
+
+.title {
+  font-family: var(--primary-font-family-alt);
+  font-weight: var(--font-weight-800);
 }
 
 p {
-  font-family: var(--secondary-font-family);
+  font-family: var(--primary-font-family-alt);
   font-weight: var(--font-weight-400);
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-normal);
 }
 
 a {
@@ -74,7 +83,7 @@ a {
 
 input,
 textarea {
-  font-family: var(--secondary-font-family);
+  font-family: var(--primary-font-family-alt);
   font-weight: var(--font-weight-400);
   border: 1px solid var(--primary-color);
   padding: 0.5em;
@@ -90,7 +99,7 @@ textarea:focus {
 /* Responsive font sizing */
 @media (max-width: 768px) {
   body {
-    font-size: calc(var(--font-size-base) * 0.9);
+    font-size: calc(var(--font-size-normal) * 0.9);
   }
   input,
   textarea {
@@ -100,7 +109,7 @@ textarea:focus {
 
 @media (min-width: 769px) {
   body {
-    font-size: calc(var(--font-size-base) * 1.1);
+    font-size: calc(var(--font-size-normal) * 1.1);
   }
   input,
   textarea {

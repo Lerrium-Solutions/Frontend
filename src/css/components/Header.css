@@ -10,3 +10,16 @@ header {
     }
 
 }
+
+@media (width >= 768px) {
+    header {
+        padding: 2em;
+    }
+}
+
+@media (width >= 1280px) {
+    header {
+        padding: 4em;
+    }
+
+}
