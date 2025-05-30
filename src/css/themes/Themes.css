@@ -6,6 +6,7 @@
     --text-color-alt: #f0f0f0;
     --text-color-muted: #808080;
     --button-text-color: var(--text-color);
+    --button-text-color-alt: var(--text-color-alt);
     --button-background-color: var(--secondary-color);
     --button-hover-background-color: var(--primary-color);
     --button-border-color: var(--text-color);
@@ -19,6 +20,7 @@
     --text-color-muted: #b0b0b0;
     --secondary-color: #5f1c61;
     --button-text-color: var(--text-color);
+    --button-text-color-alt: var(--text-color-alt);
     --button-background-color: var(--secondary-color);
     --button-hover-background-color: var(--primary-color);
     --button-border-color: var(--text-color);
@@ -79,49 +81,54 @@ footer {
 }
 
 .gdpr-card {
+    color: var(--text-color-alt);
     background-color: var(--primary-color);
-    color: var(--text-color);
 }
 
-.gdpr-card button {
-    color: var(--button-text-color);
-    background-color: var(--button-background-color);
-    border: 3px solid transparent;
-    border-bottom: 3px solid var(--button-border-color);
+.gdpr-card a {
+    color: var(--text-color-alt);
+    background-color: var(--primary-color);
 }
 
-.gdpr-card button:hover {
-    color: var(--button-text-color);
-    background-color: var(--button-hover-background-color);
-    border-bottom: 3px solid var(--button-border-color);
+.gdpr-card a:hover {
+    color: var(--text-color-alt);
+    background-color: var(--primary-color);
 }
 
 [data-theme="dark"] a {
-    color: var(--button-text-color);
-    border-bottom: 3px solid var(--button-border-color);
-    background-color: var(--button-background-color);
+    color: var(--button-text-color-alt);
 }
 
 [data-theme="dark"] a:hover,
 [data-theme="dark"] a:active {
-    color: var(--button-text-color);
+    color: var(--button-text-color-alt);
     background-color: var(--button-hover-background-color);
-    border-bottom: 3px solid var(--button-border-color);
 }
 
-[data-theme="dark"] a:focus,
-[data-theme="dark"] a:focus-visible {
-    outline: 2px solid var(--button-background-color);
+.gdpr-card button {
+    color: var(--button-text-color-alt);
+    background-color: var(--button-background-color);
+    border: 3px solid transparent;
+    border-bottom: 3px solid var(--text-color-alt);
 }
+
+.gdpr-card button:hover, .gdpr-card button:focus, .gdpr-card button:active {
+    color: var(--button-text-color-alt);
+    background-color: var(--button-hover-background-color);
+    border: 3px solid transparent;
+    border-bottom: 3px solid var(--text-color-alt);
+}
+
 
 [data-theme="dark"] .gdpr-card button {
-    color: var(--button-text-color);
+    color: var(--button-text-color-alt);
     background-color: var(--button-background-color);
-    border-bottom: 3px solid var(--button-border-color);
+    border: 3px solid transparent;
+    border-bottom: 3px solid var(--text-color-alt);
 }
-
-[data-theme="dark"] .gdpr-card button:hover {
-    color: var(--button-text-color);
+[data-theme="dark"] .gdpr-card button:hover, [data-theme="dark"] .gdpr-card button:focus, [data-theme="dark"] .gdpr-card button:active {
+    color: var(--button-text-color-alt);
     background-color: var(--button-hover-background-color);
-    border-bottom: 3px solid var(--button-border-color);
+    border: 3px solid transparent;
+    border-bottom: 3px solid var(--text-color-alt);
 }
