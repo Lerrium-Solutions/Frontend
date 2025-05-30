@@ -1,0 +1,42 @@
+:root {
+  --primary-font-family: 'WDXL Lubrifont TC', sans-serif;
+  --secondary-font-family: 'Arial', sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-size-base: 1em;
+  --fa-free-font-family: 'Font Awesome 6 Free';
+  --bs-free-font-family: 'Bootstrap Icons';
+  --primary-color: #5f1c61;
+  --secondary-color: #942ebd;
+  --background-color: #f0f0f0;
+  --text-color: #404040;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #404040;
+    --text-color: #f0f0f0;
+    --primary-color: #942ebd;
+    --secondary-color: #5f1c61;
+  }
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  a {
+    color: var(--primary-color);
+  }
+  a:hover {
+    color: var(--secondary-color);
+  }
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
