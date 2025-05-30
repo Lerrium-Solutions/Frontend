@@ -32,7 +32,7 @@ main {
         .breadcrumb {
             grid-area: breadcrumb;
             width: 100vw;
-            padding: .5rem 3rem;
+            padding: .5rem 2.5rem;
             margin: -1.8rem;
             margin-bottom: 1rem;
         }
