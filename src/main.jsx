@@ -5,6 +5,7 @@ import App from './App.jsx'
 import './css/themes/Themes.css';
 import './css/typography/Typography.css';
 import './css/buttons/Buttons.css';
+import './css/typography/Fonts.css';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

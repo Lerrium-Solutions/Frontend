@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'JetBrains Mono';
+  src:  url('../assets/fonts/JetBrainsMonoNerdFont-Thin.woff2') format('woff2'),
+        url('../assets/fonts/JetBrainsMonoNerdFont-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src:  url('../assets/fonts/JetBrainsMonoNerdFont-ExtraLight.woff2') format('woff2'),
+        url('../assets/fonts/JetBrainsMonoNerdFont-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src:  url('../assets/fonts/JetBrainsMonoNerdFont-Light.woff2') format('woff2'),
+        url('../assets/fonts/JetBrainsMonoNerdFont-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src:  url('../assets/fonts/JetBrainsMonoNerdFont-Regular.woff2') format('woff2'),
+        url('../assets/fonts/JetBrainsMonoNerdFont-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src:  url('../assets/fonts/JetBrainsMonoNerdFont-Medium.woff2') format('woff2'),
+        url('../assets/fonts/JetBrainsMonoNerdFont-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src:  url('../assets/fonts/JetBrainsMonoNerdFont-SemiBold.woff2') format('woff2'),
+        url('../assets/fonts/JetBrainsMonoNerdFont-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src:  url('../assets/fonts/JetBrainsMonoNerdFont-Bold.woff2') format('woff2'),
+        url('../assets/fonts/JetBrainsMonoNerdFont-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src:  url('../assets/fonts/JetBrainsMonoNerdFont-ExtraBold.woff2') format('woff2'),
+        url('../assets/fonts/JetBrainsMonoNerdFont-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}

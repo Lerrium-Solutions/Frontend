@@ -1,15 +1,4 @@
-:root {
-    --primary-font-family: 'WDXL Lubrifont TC', sans-serif;
-    --secondary-font-family: 'Arial', sans-serif;
-    
-    --font-weight-normal: 400;
-    --font-weight-bold: 700;
-    
-    --font-size-base: 1em;
-    
-    --fa-free-font-family: 'Font Awesome 6 Free';
-    --bs-free-font-family: 'Bootstrap Icons';
-    
+:root {    
     --primary-color: #310642;
     --secondary-color: #942ebd;
     
