@@ -2,7 +2,7 @@ header {
     padding: 1em;
     text-align: center;
     
-    a, a:hover, a:focus, a:active, a:visited {
+    /* a, a:hover, a:focus, a:active, a:visited {
         border: none;
         text-decoration: none;
         background-color: transparent;
@@ -16,7 +16,7 @@ header {
         background-color: transparent;
         outline: none;
         color: var(--text-color-alt);
-    }
+    } */
 }
 
 @media (width >= 768px) {

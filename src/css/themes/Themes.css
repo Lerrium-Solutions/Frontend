@@ -24,9 +24,10 @@
     --button-border-color: var(--text-color);
 }
 
-header, nav, footer {
+header h1 {
     color: var(--text-color-alt);
 }
+
 
 html, body {
     background-color: var(--background-color);
@@ -34,93 +35,93 @@ html, body {
 }
 
 a {
-  color: var(--button-text-color);
-  border: 3px solid transparent;
-  border-bottom: 3px solid var(--button-border-color);
-  background-color: var(--button-background-color);
-  transition: background-color 0.3s ease;
+    color: var(--button-text-color);
+    border: 3px solid transparent;
+    border-bottom: 3px solid var(--button-border-color);
+    background-color: var(--button-background-color);
+    transition: background-color 0.3s ease;
 }
 
 a:hover {
-  color: var(--button-text-color);
-  background-color: var(--button-hover-background-color);
-  border-bottom: 3px solid var(--button-border-color);
+    color: var(--button-text-color);
+    background-color: var(--button-hover-background-color);
+    border-bottom: 3px solid var(--button-border-color);
 }
 
 a:focus, a:active {
-  border: 3px solid transparent;
-  border-bottom: 3px solid var(--button-border-color);
+    border: 3px solid transparent;
+    border-bottom: 3px solid var(--button-border-color);
 }
 
 header {
-  background-color: var(--primary-color);
-  color: var(--text-color);
+    background-color: var(--primary-color);
+    color: var(--text-color);
 }
 
 nav {
-  background-color: var(--primary-color);
-  color: var(--text-color);
+    background-color: var(--primary-color);
+    color: var(--text-color);
 }
 
 main {
-  background-color: var(--background-color);
-  color: var(--text-color);
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 footer {
-  background-color: var(--primary-color);
-  color: var(--text-color-muted);
+    background-color: var(--primary-color);
+    color: var(--text-color-muted);
 }
 
 .main-content {
-  background-color: var(--background-color);
-  color: var(--text-color);
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 .gdpr-card {
-  background-color: var(--primary-color);
-  color: var(--text-color);
+    background-color: var(--primary-color);
+    color: var(--text-color);
 }
 
 .gdpr-card button {
-  color: var(--button-text-color);
-  background-color: var(--button-background-color);
-  border: 3px solid transparent;
-  border-bottom: 3px solid var(--button-border-color);
+    color: var(--button-text-color);
+    background-color: var(--button-background-color);
+    border: 3px solid transparent;
+    border-bottom: 3px solid var(--button-border-color);
 }
 
 .gdpr-card button:hover {
-  color: var(--button-text-color);
-  background-color: var(--button-hover-background-color);
-  border-bottom: 3px solid var(--button-border-color);
+    color: var(--button-text-color);
+    background-color: var(--button-hover-background-color);
+    border-bottom: 3px solid var(--button-border-color);
 }
 
 [data-theme="dark"] a {
-  color: var(--button-text-color);
-  border-bottom: 3px solid var(--button-border-color);
-  background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    border-bottom: 3px solid var(--button-border-color);
+    background-color: var(--button-background-color);
 }
 
 [data-theme="dark"] a:hover,
 [data-theme="dark"] a:active {
-  color: var(--button-text-color);
-  background-color: var(--button-hover-background-color);
-  border-bottom: 3px solid var(--button-border-color);
+    color: var(--button-text-color);
+    background-color: var(--button-hover-background-color);
+    border-bottom: 3px solid var(--button-border-color);
 }
 
 [data-theme="dark"] a:focus,
 [data-theme="dark"] a:focus-visible {
-  outline: 2px solid var(--button-background-color);
+    outline: 2px solid var(--button-background-color);
 }
 
 [data-theme="dark"] .gdpr-card button {
-  color: var(--button-text-color);
-  background-color: var(--button-background-color);
-  border-bottom: 3px solid var(--button-border-color);
+    color: var(--button-text-color);
+    background-color: var(--button-background-color);
+    border-bottom: 3px solid var(--button-border-color);
 }
 
 [data-theme="dark"] .gdpr-card button:hover {
-  color: var(--button-text-color);
-  background-color: var(--button-hover-background-color);
-  border-bottom: 3px solid var(--button-border-color);
+    color: var(--button-text-color);
+    background-color: var(--button-hover-background-color);
+    border-bottom: 3px solid var(--button-border-color);
 }
