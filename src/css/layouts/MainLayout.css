@@ -21,15 +21,43 @@ nav {
 
 main {
     grid-area: main;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        "breadcrumb"
+        "main-content";
+        
+        .breadcrumb {
+            grid-area: breadcrumb;
+            width: 100vw;
+            padding: .5rem 4rem;
+            margin: -1.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        .main-content {
+            grid-area: main-content;
+        }
 }
 
 footer {
     grid-area: footer;
     margin-top: -1rem;
-    padding: .5rem;
+    padding: 9px;
     text-align: center;
 }
 
+@media (min-width: 768px) {
+    main {
+        .breadcrumb {
+            padding: .5rem 4rem;
+            margin: -2.2rem;
+            margin-bottom: 1rem;
+        }
+    }
+}
 @media (min-width: 1200px) {
     .main-wrapper {
         grid-template-columns: auto auto;
