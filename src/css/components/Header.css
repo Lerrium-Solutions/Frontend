@@ -1,7 +1,12 @@
 header {
-  grid-area: header;
-  background-color: var(--primary-color);
-  color: white;
-  padding: 1em;
-  text-align: center;
+    padding: 1em;
+    text-align: center;
+    
+    a, a:hover, a:focus, a:active, a:visited {
+        border: none;
+        text-decoration: none;
+        background-color: transparent;
+        outline: none;
+    }
+
 }

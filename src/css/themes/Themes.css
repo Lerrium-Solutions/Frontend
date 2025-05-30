@@ -1,42 +1,139 @@
 :root {
-  --primary-font-family: 'WDXL Lubrifont TC', sans-serif;
-  --secondary-font-family: 'Arial', sans-serif;
-  --font-weight-normal: 400;
-  --font-weight-bold: 700;
-  --font-size-base: 1em;
-  --fa-free-font-family: 'Font Awesome 6 Free';
-  --bs-free-font-family: 'Bootstrap Icons';
-  --primary-color: #5f1c61;
-  --secondary-color: #942ebd;
-  --background-color: #f0f0f0;
-  --text-color: #404040;
+    --primary-font-family: 'WDXL Lubrifont TC', sans-serif;
+    --secondary-font-family: 'Arial', sans-serif;
+    
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+    
+    --font-size-base: 1em;
+    
+    --fa-free-font-family: 'Font Awesome 6 Free';
+    --bs-free-font-family: 'Bootstrap Icons';
+    
+    --primary-color: #310642;
+    --secondary-color: #942ebd;
+    
+    --background-color: #f0f0f0;
+
+    --text-color: #404040;
+    --text-color-muted: #808080;
+
+    --button-text-color: var(--text-color);
+    --button-background-color: var(--secondary-color);
+    --button-hover-background-color: var(--primary-color);
+    --button-border-color: var(--text-color);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background-color: #404040;
-    --text-color: #f0f0f0;
-    --primary-color: #942ebd;
-    --secondary-color: #5f1c61;
-  }
-  body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-  }
-  a {
-    color: var(--primary-color);
-  }
-  a:hover {
-    color: var(--secondary-color);
-  }
+    :root {
+        --background-color: #404040;
+        --text-color: #f0f0f0;
+        --text-color-muted: #b0b0b0;
+        --secondary-color: #5f1c61;
+    }
+    body {
+        background-color: var(--background-color);
+        color: var(--text-color);
+    }
+    a {
+        color: var(--primary-color);
+    }
+    a:hover {
+        color: var(--secondary-color);
+    }
 }
 
 a {
-  color: var(--primary-color);
-  text-decoration: none;
+    color: var(--button-text-color);
+    border: 3px solid transparent;
+    border-bottom: 3px solid var(--button-border-color);
+    background-color: var(--button-background-color);
+    transition: background-color 0.3s ease;
 }
 
 a:hover {
-  color: var(--secondary-color);
-  text-decoration: underline;
+    color: var(--button-text-color);
+    background-color: var(--button-hover-background-color);
+    border-bottom: 3px solid var(--button-border-color);
+}
+
+a:focus, a:active {
+    border: 3px solid transparent;
+    border-bottom: 3px solid var(--button-border-color);
+}
+
+header { 
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+nav {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+main {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+footer {
+    background-color: var(--primary-color, #333); 
+    color: var(--text-color-muted, #867d7d);
+}
+
+.main-content {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.gdpr-card {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.gdpr-card button {
+    color: var(--button-text-color);
+    background-color: var(--button-background-color);
+    border: 3px solid transparent;
+    border-bottom: 3px solid var(--button-border-color);
+    
+}
+
+.gdpr-card button:hover {
+    color: var(--button-text-color);
+    background-color: var(--button-hover-background-color);
+    border-bottom: 3px solid var(--button-border-color);
+}
+
+@media (prefers-color-scheme: dark) {
+    a {
+        color: var(--button-text-color);
+        border-bottom: 3px solid var(--button-border-color);
+        background-color: var(--button-background-color);
+    }
+
+    a:hover,
+    a:active {
+        color: var(--button-text-color);
+        background-color: var(--button-hover-background-color);
+        border-bottom: 3px solid var(--button-border-color);
+    }
+
+    a:focus,
+    a:focus-visible {
+        outline: 2px solid var(--button-background-color);
+    }
+
+    .gdpr-card button {
+        color: var(--button-text-color);
+        background-color: var(--button-background-color);
+        border-bottom: 3px solid var(--button-border-color);
+    }
+
+    .gdpr-card button:hover {
+        color: var(--button-text-color);
+        background-color: var(--button-hover-background-color);
+        border-bottom: 3px solid var(--button-border-color);
+    }
 }
