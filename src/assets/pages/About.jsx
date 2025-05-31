@@ -20,7 +20,7 @@ const About = () => {
         </div>
       </div>
       <div className="about-team">
-        <h2 className="h4">Lerrium Solutions Members</h2>
+        <h2 className="h4"></h2>
         <div className="team-members">
           <div className="about-image">
             <img src={FounderImage} alt="Founder" />
