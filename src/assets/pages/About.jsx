@@ -21,8 +21,10 @@ const About = () => {
       </div>
       <div className="about-team">
         <h2 className="h4">The Lerrium Team</h2>
-        <div className="about-image">
-          <img src={FounderImage} alt="Founder" />
+        <div className="team-members">
+          <div className="about-image">
+            <img src={FounderImage} alt="Founder" />
+          </div>
         </div>
       </div>
     </section>
