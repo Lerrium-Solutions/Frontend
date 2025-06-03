@@ -38,7 +38,7 @@ const Contact = () => {
   const cards = [
     {
       id: 'form1',
-      img: '/public/images/members/founder.png',
+      img: '/images/members/founder.png',
       name: 'Slisk Lindqvist',
       title: 'Web Developer (2026)',
       address: 'Västgötagatan 10j, 68140 Kristinehamn, Sweden',
@@ -54,7 +54,7 @@ const Contact = () => {
     },
     {
       id: 'form2',
-      img: '/public/images/members/founder.png',
+      img: '/images/members/founder.png',
       name: 'Slisk Lindqvist',
       title: 'Web Developer (2026)',
       address: 'Västgötagatan 10j, 68140 Kristinehamn, Sweden',
@@ -70,7 +70,7 @@ const Contact = () => {
     },
     {
       id: 'form3',
-      img: '/public/images/members/founder.png',
+      img: '/images/members/founder.png',
       name: 'Slisk Lindqvist',
       title: 'Web Developer (2026)',
       address: 'Västgötagatan 10j, 68140 Kristinehamn, Sweden',
@@ -86,7 +86,7 @@ const Contact = () => {
     },
     {
       id: 'form4',
-      img: '/public/images/members/founder.png',
+      img: '/images/members/founder.png',
       name: 'Slisk Lindqvist',
       title: 'Web Developer (2026)',
       address: 'Västgötagatan 10j, 68140 Kristinehamn, Sweden',
@@ -102,7 +102,7 @@ const Contact = () => {
     },
     {
       id: 'form5',
-      img: '/public/images/members/founder.png',
+      img: '/images/members/founder.png',
       name: 'Slisk Lindqvist',
       title: 'Web Developer (2026)',
       address: 'Västgötagatan 10j, 68140 Kristinehamn, Sweden',
@@ -118,7 +118,7 @@ const Contact = () => {
     },
     {
       id: 'form6',
-      img: '/public/images/members/founder.png',
+      img: '/images/members/founder.png',
       name: 'Slisk Lindqvist',
       title: 'Web Developer (2026)',
       address: 'Västgötagatan 10j, 68140 Kristinehamn, Sweden',
