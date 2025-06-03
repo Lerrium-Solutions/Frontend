@@ -1,0 +1,161 @@
+/* .main-content {
+    margin: 0;
+    padding: 0;
+} */
+
+.contact-page {
+    position: relative;
+    top: -1rem;
+    left: -1.4rem;
+    min-width: 360px;
+    width: 390px;
+}
+.contact-form-card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: 
+        "social social"
+        "img info"
+        "form form";
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-size: var(--font-size-medium);
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    width: 100%;
+    margin: -1rem;
+    /* max-width: 442px; */
+    padding: 0.5rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s;
+    overflow: hidden;
+}
+/* 
+.contact-form-card:hover {
+    transform: scale(1.05);
+} */
+
+.contact-card-img {
+    grid-area: img;
+    width: 100%;
+    max-width: 115px;
+    height: auto;
+    overflow: hidden;
+}
+
+.contact-card-info {
+    grid-area: info;
+    padding: 0 1rem;
+}
+
+.contact-form-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    display: block;
+}
+
+.contact-form-card p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: var(--text-color-alt);
+}
+
+.contact-card-social {
+    grid-area: social;
+    font-size: var(--font-size-small);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    max-width: 100%;
+}
+
+.social-icon {
+    font-size: .8rem;
+    color: var(--text-color-alt);
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.social-icon:hover {
+    opacity: 0.7;
+}
+
+.contact-form-container {
+    grid-area: form;
+    max-height: 0; /* Initially hidden */
+    background-color: var(--primary-color); /* Match card background */
+    padding: 0; /* Remove default padding initially */
+    border: none; /* Remove border to blend with card */
+    border-radius: 0 0 5px 5px; /* Continue the card's border radius */
+    overflow: hidden; /* Hide overflow during transition */
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out; /* Smooth dropdown effect */
+}
+
+.contact-form-container.active {
+    max-height: 400px; /* Enough height for the form, adjust as needed */
+    padding: 10px; /* Add padding when active */
+}
+
+.contact-form-container form {
+    background-color: transparent; /* No separate background */
+    padding: 0; /* Padding handled by container */
+    border: none; /* Remove border */
+}
+
+.contact-form-container select,
+.contact-form-container input,
+.contact-form-container textarea {
+    display: block;
+    margin: 5px 0;
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid var(--button-border-color);
+    background-color: var(--background-color);
+    color: var(--text-color-alt);
+}
+
+.contact-form-container textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.contact-form-container button {
+    margin-top: 3px;
+    margin-bottom: -10px;
+    background-color: var(--button-background-color);
+    color: var(--button-text-color-alt);
+    border-bottom: 3px solid var(--button-border-color);
+    padding: 7px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.contact-form-container button:hover {
+    background-color: var(--button-hover-background-color);
+}
+
+/* Tablet and up: convert to card */
+@media screen and (min-width: 768px) {
+    .contact-form-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+/* Desktop and up: buttons side-by-side */
+@media screen and (min-width: 1200px) {
+    .contact-form-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "social social"
+            "img info"
+            "form form";
+    }
+}
