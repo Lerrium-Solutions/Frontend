@@ -1,5 +1,3 @@
-
-
 .contact-page {
     position: relative;
     left: -1rem;
@@ -84,24 +82,24 @@
 
 .contact-form-container {
     grid-area: form;
-    max-height: 0; /* Initially hidden */
-    background-color: var(--primary-color); /* Match card background */
-    padding: 0; /* Remove default padding initially */
-    border: none; /* Remove border to blend with card */
-    border-radius: 0 0 5px 5px; /* Continue the card's border radius */
-    overflow: hidden; /* Hide overflow during transition */
-    transition: max-height 0.3s ease-out, padding 0.3s ease-out; /* Smooth dropdown effect */
+    max-height: 0;
+    background-color: var(--primary-color);
+    padding: 0;
+    border: none;
+    border-radius: 0 0 5px 5px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
 }
 
 .contact-form-container.active {
-    max-height: 400px; /* Enough height for the form, adjust as needed */
-    padding: 10px; /* Add padding when active */
+    max-height: 400px;
+    padding: 10px;
 }
 
 .contact-form-container form {
-    background-color: transparent; /* No separate background */
-    padding: 0; /* Padding handled by container */
-    border: none; /* Remove border */
+    background-color: transparent;
+    padding: 0;
+    border: none;
 }
 
 .contact-form-container select,
@@ -138,24 +136,294 @@
     background-color: var(--button-hover-background-color);
 }
 
-/* Tablet and up: convert to card */
-@media screen and (min-width: 768px) {
-    .contact-form-card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+
+@media screen and (min-width: 400px) {
+    .contact-card-social {
+        font-size: var(--font-size-small);
+        gap: .2rem;
+
+        a {
+            padding: 0.3rem 0.7rem;
+        }
     }
-    
 }
 
-/* Desktop and up: buttons side-by-side */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 430px) {
+    .contact-page {
+        position: relative;
+        left: -1rem;
+        width: 104%;
+    }
+
+    .contact-card-social {
+        a {
+            padding: 0.3rem .9rem;
+        }
+    }
+}
+
+@media screen and (min-width: 512px) {
+    .contact-page {
+        position: relative;
+        left: -1rem;
+        width: 104%;
+    }
+
+    .contact-card-social {
+        font-size: var(--font-size-normal);
+        gap: .2rem;
+
+        a {
+            padding: 0.3rem 1.2rem;
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .contact-page {
+        position: relative;
+        left: -1rem;
+        width: 103%;
+    }
+
+    .contact-card-social {
+        font-size: var(--font-size-normal);
+        gap: .2rem;
+
+        a {
+            padding: 0.3rem 1.5rem;
+        }
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .contact-page {
+        position: relative;
+        left: -1rem;
+        width: 102.5%;
+    }
+    
+    .contact-card-social {
+        padding: 0 1rem ;
+        font-size: var(--font-size-normal);
+        gap: .2rem;
+
+        a {
+            padding: 0.4rem 1.5rem;
+        }
+    }
+}
+
+/* Tablet and up: convert to card */
+@media screen and (min-width: 768px) {
+    .contact-page {
+        position: relative;
+        left: 0;
+        width: 98%;
+    }
+
+    .contact-card-social {
+        padding: 0 1rem ;
+        font-size: var(--font-size-normal);
+        gap: .2rem;
+
+        a {
+            padding: 0.4rem 1.5rem;
+        }
+    }
+
     .contact-form-card {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: auto 1fr;
         grid-template-areas: 
             "social social"
             "img info"
             "form form";
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        font-size: var(--font-size-medium);
+        /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+        width: 100%;
+        margin: -1rem;
+        /* max-width: 442px; */
+        padding: 0.5rem;
+        margin: 0.5rem;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: transform 0.2s;
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-width: 920px) {
+    .contact-page {
+        position: relative;
+        left: -1.4rem;
+        width: 103%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .contact-card-social {
+        padding: 0;
+        font-size: var(--font-size-small);
+        gap: .5rem;
+
+        a {
+            padding: 0.4rem .8rem;
+        }
+    }
+
+    .contact-form-card {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-areas: 
+            "social social"
+            "img info"
+            "form form";
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        font-size: var(--font-size-medium);
+        /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+        width: 100%;
+        margin: -1rem;
+        /* max-width: 442px; */
+        padding: 0.5rem;
+        margin: 0.5rem;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: transform 0.2s;
+        overflow: hidden;
+    }
+}
+
+/* Desktop and up: buttons side-by-side */
+@media screen and (min-width: 1200px) {
+    .contact-page {
+        position: relative;
+        left: 0;
+        width: 99%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .contact-card-social {
+        padding: 0;
+        font-size: var(--font-size-small);
+        gap: .5rem;
+
+        a {
+            padding: 0.4rem .8rem;
+        }
+    }
+
+    .contact-form-card {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-areas: 
+            "social social"
+            "img info"
+            "form form";
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        font-size: var(--font-size-medium);
+        /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+        width: 100%;
+        margin: -1rem;
+        /* max-width: 442px; */
+        padding: 0.5rem;
+        margin: 0.5rem;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: transform 0.2s;
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .contact-page {
+        position: relative;
+        left: 0;
+        width: 99%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+
+    .contact-card-social {
+        padding: 0;
+        font-size: var(--font-size-small);
+        gap: .5rem;
+
+        a {
+            padding: 0.4rem .8rem;
+        }
+    }
+
+    .contact-form-card {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-areas: 
+            "social social"
+            "img info"
+            "form form";
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        font-size: var(--font-size-medium);
+        /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+        width: 100%;
+        margin: -1rem;
+        /* max-width: 442px; */
+        padding: 0.5rem;
+        margin: 0.5rem;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: transform 0.2s;
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .contact-page {
+        position: relative;
+        left: 0;
+        width: 99%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1rem;
+    }
+
+    .contact-card-social {
+        padding: 0;
+        font-size: var(--font-size-small);
+        gap: .5rem;
+
+        a {
+            padding: 0.4rem .8rem;
+        }
+    }
+
+    .contact-form-card {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-areas: 
+            "social social"
+            "img info"
+            "form form";
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        font-size: var(--font-size-medium);
+        /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+        width: 100%;
+        margin: -1rem;
+        /* max-width: 442px; */
+        padding: 0.5rem;
+        margin: 0.5rem;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: transform 0.2s;
+        overflow: hidden;
     }
 }
