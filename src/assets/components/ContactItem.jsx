@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactListItem = ({ card, activeForm, toggleForm, sendEmail, socialIcons }) => {
     return (
-        // <div className="contact-wrapper">
+        <div className="contact-wrapper">
             <div className="contact-form-card" onClick={() => toggleForm(card.id)}>
                 <div className="contact-card-social">
                 {Object.entries(socialIcons).map(([platform, iconClass]) => {
@@ -26,11 +26,13 @@ const ContactListItem = ({ card, activeForm, toggleForm, sendEmail, socialIcons 
                 <p>Phone: {card.phone}</p>
                 </div>
                 <div className={`contact-form-container ${activeForm === card.id ? 'active' : ''}`} id={card.id}>
-                <form onSubmit={(e) => sendEmail(e, card.email)}>
+                <form 
+                    onSubmit={(e) => sendEmail(e, card.email)}
+                    onClick={(e) => e.stopPropagation()}>
                     <select name="topic" required>
-                    <option value={`Hire for ${card.title.split(' ')[0]}`}>{`Hire for ${card.title.split(' ')[0]}`}</option>
-                    <option value="Feedback">Feedback</option>
-                    <option value="Support">Support</option>
+                        <option value=""></option>
+                        <option value="Feedback">Feedback</option>
+                        <option value="Support">Support</option>
                     </select>
                     <input type="text" name="name" placeholder="Your Name" required />
                     <input type="email" name="email" placeholder="Your Email" required />
@@ -39,7 +41,7 @@ const ContactListItem = ({ card, activeForm, toggleForm, sendEmail, socialIcons 
                 </form>
                 </div>
             </div>
-        // </div>
+        </div>
     );
 };
 
