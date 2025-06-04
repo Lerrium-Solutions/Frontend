@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactListItem = ({ card, activeForm, toggleForm, sendEmail, socialIcons }) => {
     return (
-        <div className="contact-wrapper">
+        // <div className="contact-wrapper">
             <div className="contact-form-card" onClick={() => toggleForm(card.id)}>
                 <div className="contact-card-social">
                 {Object.entries(socialIcons).map(([platform, iconClass]) => {
@@ -39,7 +39,7 @@ const ContactListItem = ({ card, activeForm, toggleForm, sendEmail, socialIcons 
                 </form>
                 </div>
             </div>
-        </div>
+        // </div>
     );
 };
 
