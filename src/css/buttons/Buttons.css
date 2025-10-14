@@ -9,7 +9,7 @@ button {
 }
 
 button:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 @media (max-width: 768px) {

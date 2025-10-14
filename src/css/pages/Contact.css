@@ -112,7 +112,7 @@
     border-radius: 3px;
     border: 1px solid var(--button-border-color);
     background-color: var(--background-color);
-    color: var(--text-color-alt);
+    color: var(--text-color);
 }
 
 .contact-form-container textarea {

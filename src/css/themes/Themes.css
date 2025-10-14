@@ -9,7 +9,7 @@
     --button-text-color-alt: var(--text-color-alt);
     --button-background-color: var(--secondary-color);
     --button-hover-background-color: var(--primary-color);
-    --button-border-color: var(--text-color);
+    --button-border-color: var(--text-color-alt);
 }
 
 [data-theme="dark"] {
@@ -85,6 +85,13 @@ footer {
     color: var(--text-color-muted);
 }
 
+form button {
+    color: blue;
+    background-color: var(--button-background-color);
+    border: 3px solid transparent;
+    border-bottom: 3px solid var(--button-border-color);
+}
+
 .gdpr-card {
     color: var(--text-color-alt);
     background-color: var(--primary-color);
@@ -137,3 +144,4 @@ footer {
     border: 3px solid transparent;
     border-bottom: 3px solid var(--text-color-alt);
 }
+
