@@ -51,7 +51,7 @@ const Contact = () => {
       facebook: 'https://www.facebook.com/querzion',
       youtube: 'https://www.youtube.com/@QuestionTheTruth',
       tiktok: 'https://www.tiktok.com/@querzion',
-    },
+    },    
   ];
 
   return (
