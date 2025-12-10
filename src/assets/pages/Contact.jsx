@@ -38,7 +38,7 @@ const Contact = () => {
   const cards = [
     {
       id: 'form1',
-      img: '/images/members/founder.png',
+      img: '/images/members/001.avif',
       name: 'Slisk Lindqvist',
       title: 'Web Developer (2026)',
       address: 'Västgötagatan 10j, 68140 Kristinehamn, Sweden',

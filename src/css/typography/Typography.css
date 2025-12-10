@@ -99,6 +99,7 @@ textarea:focus {
 
 .icon {
   font-family: var(--bs-free-font-family);
+  /* font-family: var(--primary-font-family); */
 }
 
 /* Responsive font sizing */

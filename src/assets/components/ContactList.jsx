@@ -11,6 +11,15 @@ const ContactList = ({ cards, activeForm, toggleForm, sendEmail }) => {
         youtube: 'bi-youtube',
         tiktok: 'bi-tiktok',
     };
+    // const socialIcons = {
+    //     github: '\uf09b',
+    //     twitter: '\uf099',
+    //     linkedin: '\uf0e1',
+    //     instagram: '\uf16d',
+    //     facebook: '\uf09a',
+    //     youtube: '\uf167',
+    //     tiktok: '\ue07b',
+    // };
 
     return (
         <>

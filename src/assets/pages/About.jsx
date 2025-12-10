@@ -1,6 +1,6 @@
 import React from 'react';
 import '/src/css/pages/About.css';
-import FounderImage from '/images/members/founder.png';
+import FounderImage from '/images/members/001.avif';
 
 const About = () => {
   return (
