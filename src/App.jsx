@@ -7,9 +7,9 @@ import About from './assets/pages/About';
 import Projects from './assets/pages/Projects';
 import Contact from './assets/pages/Contact';
 import PrivacyPolicy from './assets/pages/PrivacyPolicy';
-import CenterLayout from './assets/layouts/CenterLayout';
-import Login from './assets/auth/Login';
-import Register from './assets/auth/Register';
+// import CenterLayout from './assets/layouts/CenterLayout';
+// import Login from './assets/auth/Login';
+// import Register from './assets/auth/Register';
 import NotFound from './assets/pages/NotFound';
 import GDPRBanner from './assets/components/GDPR';
 
@@ -38,10 +38,10 @@ function App() {
         </Route>
 
         {/* CenterLayout for auth pages */}
-        <Route path="/auth" element={<CenterLayout />}>
+        {/* <Route path="/auth" element={<CenterLayout />}>
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
-        </Route>
+        </Route> */}
 
         {/* 404 Route */}
         <Route path="*" element={<NotFound />} />
